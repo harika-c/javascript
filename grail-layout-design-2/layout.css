@@ -1,0 +1,78 @@
+.flex-con {
+  display: flex;
+  background-color: black;
+  height: 500px;
+}
+
+.item {
+  background-color: brown;
+  margin: 2px;
+}
+
+.col-1 {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.view {
+  flex: 4;
+}
+.side {
+  flex: 7;
+}
+
+.col-2 {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+}
+.row-1 {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-2 {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+}
+.img-1 {
+  flex: 2;
+}
+.img-2 {
+  flex: 2;
+}
+.img-3 {
+  flex: 2;
+}
+
+.row-3 {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+}
+
+.box-1 {
+  flex: 2;
+}
+.box-2 {
+  flex: 4;
+}
+
+.col-3 {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.questions {
+  flex: 4;
+}
+.chat {
+  flex: 1;
+}
+.nav {
+  flex: 6;
+}
