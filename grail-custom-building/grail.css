@@ -1,0 +1,74 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  width: 700px;
+  background-color: blueviolet;
+}
+
+/* .sky {
+  background-color: black;
+} */
+
+.wall {
+  border-style: ridge;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.building-1,
+.building-2,
+.building-3,
+.building-4,
+.building-5,
+.building-6,
+.building-7,
+.building-8 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-1-1,
+.item-8-1 {
+  flex: 1;
+}
+.item-1-2,
+.item-8-2 {
+  flex: 9;
+}
+
+.item-2-1,
+.item-7-1 {
+  flex: 6;
+}
+.item-2-2,
+.item-7-2 {
+  flex: 4;
+}
+
+.item-3-1,
+.item-5-1 {
+  flex: 3;
+}
+.item-3-2,
+.item-5-2 {
+  flex: 7;
+}
+
+.item-4-1,
+.item-6-1 {
+  flex: 7;
+}
+.item-4-2,
+.item-6-2 {
+  flex: 3;
+}
+
+.window {
+  background-color: rgb(196, 190, 169);
+  width: 10px;
+  height: 10px;
+  margin: 15px;
+}
