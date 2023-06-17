@@ -1,0 +1,122 @@
+.each-plant {
+  display: inline-flex;
+  margin: 10px;
+}
+
+.left-leaf {
+  background-color: green;
+  border-radius: 70% 40% 80% 0%;
+  width: 80px;
+  height: 79px;
+}
+.right-leaf {
+  background-color: green;
+  border-radius: 40% 80% 0% 70%;
+  width: 80px;
+  height: 79px;
+}
+
+/* to make triangle like shape use , border and set height = width = 0 */
+/* .right-pointed-tip {
+  bottom: 9px;
+  height: 0;
+  width: 0;
+  border-bottom: 16px solid transparent;
+  border-right: 19px solid green;
+  border-top: 10px solid transparent;
+  margin-top: 20px;
+  position: relative;
+  left: 0.5px;
+} */
+
+/* .left-pointed-tip {
+  height: 0;
+  width: 0;
+  border-bottom: 30px solid transparent;
+  border-right: 50px solid green;
+  border-top: 30px solid transparent;
+  margin-top: 20px;
+  position: relative;
+  left: 7px;
+} */
+
+.middle-stem {
+  height: 80px;
+  width: 2px;
+  background-color: brown;
+  border-radius: 20%;
+}
+
+.left-main-vein {
+  left: 15px;
+  position: relative;
+  bottom: 5px;
+  transform: rotate(120deg);
+  height: 80px;
+  width: 100px;
+  border: black solid;
+  border-radius: 100%;
+  border-color: transparent transparent black transparent;
+}
+
+.left-side-vein {
+  top: 0;
+  height: 15px;
+  width: 15px;
+  transform: rotate(45deg);
+  border: solid black;
+  border-color: black black transparent transparent;
+  border-radius: 100% 1% 100% 120%;
+  position: relative;
+}
+
+.left-side-veins {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  transform: rotate(-50deg);
+  top: 8px;
+  left: 6px;
+}
+
+.right-main-vein {
+  right: 30px;
+  position: relative;
+  transform: rotate(53deg);
+  height: 80px;
+  width: 100px;
+  border: black solid;
+  border-radius: 100%;
+  border-color: black transparent transparent transparent;
+}
+.right-side-veins {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  transform: rotate(40deg);
+  left: 26px;
+  top: 38px;
+}
+.right-side-vein {
+  transform: rotate(225deg);
+  height: 15px;
+  width: 15px;
+  border: solid black;
+  border-color: black black transparent transparent;
+  border-radius: 100% 1% 100% 120%;
+  position: relative;
+}
+
+.flower-floret {
+  background-color: yellow;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+.each-petal {
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  border-radius: 100% 10% 20% 100%;
+}
