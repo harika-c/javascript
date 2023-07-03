@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.para {
+  height: auto;
+  width: 250px;
+}
+
+/* img:hover + .para {
+  display: block; */
+/* width: 250px; */
+/* height: auto; */
+/* color: black; */
+/* font-size: medium; */
+/* z-index: 2; */
+/* background-color: rgb(145, 132, 158); */
+/* } */
+
+/* .card:hover {
+  top: 80px;
+  left: 60px;
+  transform: scale(1.5);
+  z-index: 1;
+  /* background-color: rgb(125, 119, 130); */
+/* }  */
+
+img {
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+}
+
+img:hover {
+  box-shadow: 5px 5px 20px 5px black;
+}
+
+.title {
+  top: 150px;
+  left: 15px;
+  position: absolute;
+  font-size: x-large;
+  font-family: fantasy;
+  color: white;
+}

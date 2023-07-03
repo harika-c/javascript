@@ -1,0 +1,52 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  display: block;
+}
+
+.card {
+  position: relative;
+  margin: 8px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 10px 0px rgb(189, 138, 237);
+}
+
+.title {
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  color: white;
+  font-family: fantasy;
+  font-size: x-large;
+}
+
+/* rotate X */
+.card-1 :hover,
+.card-4 :hover,
+.card-7 :hover {
+  transition-duration: 2s;
+  transform: rotate3d(1, 0, 0, 180deg);
+}
+
+/* rotate Y */
+.card-2 :hover,
+.card-5 :hover,
+.card-8 :hover {
+  transform: rotate3d(0, 1, 0, 180deg);
+  transition-duration: 2s;
+}
+
+/* rotate Z */
+.card-3 :hover,
+.card-6 :hover,
+.card-9 :hover {
+  transform: rotate3d(0, 0, 1, 180deg);
+  transition-duration: 2s;
+}
