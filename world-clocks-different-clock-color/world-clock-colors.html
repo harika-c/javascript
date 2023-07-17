@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World clock colors</title>
+    <link rel="stylesheet" href="world-clock-colors.css" />
+  </head>
+  <body>
+    <select id="time-zone" name="time-zone">
+      <option disabled selected value>Choose a TimeZone</option>
+    </select>
+    <button id="add-button" onclick="selectTimeZone()">
+      <div id="white-dot-top">Add</div>
+      <div id="white-dot-bottom"></div>
+    </button>
+    <div class="countries" id="countries"></div>
+  </body>
+  <script src="world-clock-colors.js"></script>
+</html>
