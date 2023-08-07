@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon Phase</title>
+    <link rel="stylesheet" href="moon-earth-sun.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calendar">
+        <input type="date" onchange="dateChange(event)" />
+      </div>
+      <div class="solar-system" id="solar-system">
+        <div id="sun">
+          <img
+            id="sun-img"
+            src="https://solarsystem.nasa.gov/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSXBaakJoWVRWbFkySXRZVGN5TkMwME9HUXhMV0psWXpJdE1ERXdOemMxTnprek16VTJCam9HUlZRNkVHUnBjM0J2YzJsMGFXOXVTU0puYVc1c2FXNWxPeUJtYVd4bGJtRnRaVDBpVTNWdVJXMXBkSE5UYjJ4emRHbGpaVVpzWVhKbE1USXdNSGN1YW5Cbklqc2dabWxzWlc1aGJXVXFQVlZVUmkwNEp5ZFRkVzVGYldsMGMxTnZiSE4wYVdObFJteGhjbVV4TWpBd2R5NXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--13efe85b3837d06bb1af8ed7ff675e03892e99c4/SunEmitsSolsticeFlare1200w.jpg"
+          />
+        </div>
+        <div id="earth-moon">
+          <div id="earth">
+            <img
+              id="earth-img"
+              src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/apollo_17_blue_marble_photo_dec_7_1972_as17-148-22727.jpg"
+            />
+          </div>
+          <div id="moon">
+            <img id="moon-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="moon-earth-sun.js"></script>
+</html>

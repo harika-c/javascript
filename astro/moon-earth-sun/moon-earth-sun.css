@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+}
+
+.solar-system {
+  width: 700px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 260deg;
+}
+
+#sun {
+  padding: 150px;
+}
+
+#moon {
+  display: flex;
+  align-items: center;
+}
+
+#moon-img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+#sun-img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+#earth-img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#earth-moon {
+  display: flex;
+  flex-direction: row;
+}
+
+/* #earth-img:hover {
+  transform: rotateZ(180deg);
+  transition-duration: 5s;
+}
+
+#moon-img:hover {
+  transform: rotateZ(180deg);
+  transition-duration: 5s;
+} */
