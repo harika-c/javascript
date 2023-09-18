@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link href="pokemon.css" rel="stylesheet" />
+    <script src="pokemon.js"></script>
+  </head>
+  <body>
+    <div class="pokemon main-page">
+      <input
+        placeholder="how many poke do you want to see ?"
+        class="poke-input"
+        value=""
+        type="number"
+        oninput="pokeChange(this.value)"
+      />
+      <div class="error-message" id="error-message"></div>
+      <div class="pokemon" id="pokemon"></div>
+    </div>
+  </body>
+</html>

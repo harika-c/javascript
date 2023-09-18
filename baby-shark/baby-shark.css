@@ -1,0 +1,109 @@
+body {
+  background-color: rgb(95, 143, 221);
+}
+
+.trees {
+  display: flex;
+
+  position: absolute;
+  bottom: 0px;
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.tree {
+  height: 0;
+  width: 0;
+  border-left: solid transparent 50px;
+  border-bottom: solid rgb(36, 108, 25) 50px;
+  border-right: solid transparent 50px;
+}
+
+.stem {
+  background-color: rgb(92, 54, 54);
+  height: 50px;
+  width: 10px;
+  left: 50px;
+  position: relative;
+}
+
+.bubble {
+  background-color: beige;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 120px;
+}
+
+@keyframes moveBottomToTop {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 600px;
+  }
+}
+
+.shark {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0px;
+  left: 150px;
+  animation: moveBodyTopToBottom 5s infinite;
+}
+.shark-body {
+  background-color: rgb(42 77 141);
+  width: 400px;
+  height: 60px;
+  border-radius: 80% 20%;
+  border: solid 20px;
+  border-top: solid rgb(42 77 141) 40px;
+  border-bottom: solid white 50px;
+  border-left: solid white 4px;
+  border-right: solid white 4px;
+}
+@keyframes moveBodyTopToBottom {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 600px;
+  }
+}
+
+.shark-eye {
+  background-color: black;
+  height: 20px;
+  top: 60px;
+  border-radius: 100px;
+  left: 90px;
+  width: 20px;
+  position: relative;
+}
+.shark-tail {
+  border-radius: 60% 20% 20% 60%;
+  width: 10px;
+  border: solid rgb(42 77 141) 50px;
+  border-right: solid transparent 130px;
+  border-left: solid rgb(42 77 141) 50px;
+  position: relative;
+  bottom: 50px;
+}
+
+.shark-fin {
+  border: solid blue 20px;
+  transform: rotate(145deg);
+  border-radius: 100% 20%/20% 30% 40%;
+  border-top: solid transparent 30px;
+  border-left: solid transparent 70px;
+  border-right: solid transparent 70px;
+  border-bottom: solid rgb(42 77 141) 60px;
+  position: relative;
+  left: 300px;
+  bottom: 40px;
+}

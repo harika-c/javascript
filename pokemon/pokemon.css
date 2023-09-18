@@ -1,0 +1,33 @@
+.pokemon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.poke {
+  border-radius: 90%;
+}
+
+.poke-title {
+  position: relative;
+  bottom: 20px;
+  left: 35px;
+  color: white;
+  font-size: small;
+}
+
+img {
+  height: 130px;
+  width: 150px;
+}
+
+.poke-input {
+  width: 300px;
+  height: 10px;
+}
+
+.error-message {
+  margin: 10px;
+  background-color: aliceblue;
+  font-size: x-large;
+  font-family: fantasy;
+}
