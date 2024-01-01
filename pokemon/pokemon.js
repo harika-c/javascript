@@ -47,15 +47,19 @@ function removeErrorMessageIfExists() {
   }
 }
 
+function createErrorMessage() {
+  const errorText = document.createElement("div");
+  errorText.setAttribute("id", "error-text");
+  errorText.innerText = "Arceus world has 1010 pokemon only ! ";
+  const errorMessage = document.getElementById("error-message");
+  errorMessage.appendChild(errorText);
+}
+
 const pokeChange = async (val) => {
   removePokemonIfExists();
   removeErrorMessageIfExists();
   if (val > 1010) {
-    const errorText = document.createElement("div");
-    errorText.setAttribute("id", "error-text");
-    errorText.innerText = "Arceus world has 1010 pokemon only ! ";
-    const errorMessage = document.getElementById("error-message");
-    errorMessage.appendChild(errorText);
+    createErrorMessage();
   } else {
     const promises = [];
     for (let index = 1; index <= val; index++) {

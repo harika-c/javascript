@@ -1,0 +1,30 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.container {
+  height: 98vh;
+  width: 100%;
+  background-color: black;
+}
+
+.jupiter-visit-earth {
+  height: 98vh;
+  width: 100%;
+}
+
+.earth {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 300px;
+}
+
+.jupiter {
+  background-image: radial-gradient(#fceabb 3%, transparent 10%, black 14%);
+  width: calc(10 * 12px);
+  height: calc(10 * 12px);
+}

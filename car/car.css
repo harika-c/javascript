@@ -1,0 +1,162 @@
+html,
+body {
+  height: 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#eye-icon {
+  cursor: pointer;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.car-head {
+  display: flex;
+  justify-content: space-around;
+  border: solid brown 3px;
+  border-radius: 10px 10px 0 0;
+  background-color: aqua;
+  height: 60px;
+  width: 200px;
+}
+
+.car-body {
+  background-color: brown;
+  height: 80px;
+  width: 300px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.car-body {
+  box-shadow: 5px 5px 15px #ce89ce;
+}
+
+.car-head-light {
+  position: relative;
+  background-color: yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.car-wheels {
+  display: flex;
+  gap: 200px;
+  padding: 1px 0px 0px 100px;
+  width: 100%;
+}
+.wheels {
+  box-shadow: 5px 5px 20px #a9a6af;
+  background-color: grey;
+  height: 50px;
+  width: 30px;
+  border-radius: 10%;
+}
+
+ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+li {
+  color: black;
+}
+
+.dark-mode li {
+  color: white;
+}
+
+svg {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+path {
+  fill: white;
+}
+
+.wiper {
+  height: 120px;
+  width: 2px;
+  position: relative;
+  left: -10px;
+  rotate: 20deg;
+  border: black solid;
+  border-image: linear-gradient(to top, transparent 50%, grey 50%) 0% 0% 0% 10%;
+}
+
+@keyframes wiperRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(40deg);
+  }
+  60% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.flash {
+  animation-name: flashLights;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+}
+@keyframes flashLights {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cloud-icon {
+  position: relative;
+  top: -160px;
+}
+
+.drops {
+  transform: rotate(318deg);
+  border-radius: 100% 10% 100% 100%;
+  background-color: rgb(160, 205, 245);
+  width: 15px;
+  height: 15px;
+  animation-name: drops;
+  animation-iteration-count: infinite;
+}
+
+@keyframes drops {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+.drops:nth-of-type(2n + 1) {
+  animation-duration: 2.5s;
+}
+
+.drops:nth-of-type(2n) {
+  animation-duration: 7s;
+}
+.drops:nth-of-type(2) {
+  animation-duration: 5s;
+}

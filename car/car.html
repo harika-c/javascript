@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car</title>
+    <link href="car.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script async src="car.js"></script>
+  </head>
+  <body class="dark-mode">
+    <div class="container">
+      <div class="dark-mode" onclick="darkMode()">
+        <i class="fa fa-eye" id="eye-icon"></i>
+      </div>
+
+      <div class="car" id="car">
+        <div class="car-head">
+          <div class="wiper"></div>
+          <div class="wiper"></div>
+        </div>
+        <div class="car-body">
+          <div class="car-head-light light-1" id="car-head-light">
+            <div class="flash-1 flash" id="flash-1"></div>
+          </div>
+
+          <div class="car-head-light light-2" id="car-head-light">
+            <div class="flash-2 flash" id="flash-2"></div>
+          </div>
+        </div>
+        <div class="car-wheels">
+          <div class="wheel-1 wheels"></div>
+          <div class="wheel-2 wheels"></div>
+        </div>
+      </div>
+
+      <div class="menu" id="menu">
+        <nav>
+          <ul>
+            <li onclick="carLights()">Lights on/off</li>
+            <li onclick="carWash()">Car Wash</li>
+            <li onclick="wiper()">Wiper</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
